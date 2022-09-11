@@ -11,7 +11,7 @@ namespace MaximiumNumbersAndRefactors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax \t 4.Generic max value ");
+            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax \t 4.Generic max value \t 5.Generic class and type ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -37,10 +37,21 @@ namespace MaximiumNumbersAndRefactors
                     float val2 = genericRefactor3To1Maximum.PrintMaximumValue(56.4f, 8.23f, 67.4f);
                     string val3 = genericRefactor3To1Maximum.PrintMaximumValue("banana", "watermellon", "papaya");
                     break;
+                case 5:
+                    MaximumGenericValue<int> maximumgenericvalue1 = new MaximumGenericValue<int>(90, 67, 65);
+                    MaximumGenericValue<float> maximumgenericvalue2 = new MaximumGenericValue<float>(5.6f, 6.7f, 89.6f);
+                    MaximumGenericValue<string> maximumgenericvalue3 = new MaximumGenericValue<string>("papaya","apple","grapes");
+                    Console.WriteLine("Maximum integer value is " +maximumgenericvalue1.MaxMethod());
+                    Console.WriteLine("Maximum float value is " +maximumgenericvalue2.MaxMethod());
+                    Console.WriteLine("Maximum string value is " +maximumgenericvalue3.MaxMethod());
+                    break;
+
+
                 default:
                     Console.WriteLine("Enter wrong choice");
                     break;
-                        Console.ReadLine();
+                    
+                    Console.ReadLine();
             }
         }
     }
