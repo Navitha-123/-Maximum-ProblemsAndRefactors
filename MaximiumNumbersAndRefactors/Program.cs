@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace MaximiumNumbersAndRefactors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax");
+            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax \t 4.Generic max value ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -30,8 +31,16 @@ namespace MaximiumNumbersAndRefactors
                     Console.WriteLine("maximum string value is " +strvalue);
                     break;
 
-
-                    Console.ReadLine();
+                case 4:
+                    GenericRefactor3To1Maximum genericRefactor3To1Maximum = new GenericRefactor3To1Maximum();
+                    int val1 = genericRefactor3To1Maximum.PrintMaximumValue(908, 564, 7000);
+                    float val2 = genericRefactor3To1Maximum.PrintMaximumValue(56.4f, 8.23f, 67.4f);
+                    string val3 = genericRefactor3To1Maximum.PrintMaximumValue("banana", "watermellon", "papaya");
+                    break;
+                default:
+                    Console.WriteLine("Enter wrong choice");
+                    break;
+                        Console.ReadLine();
             }
         }
     }
