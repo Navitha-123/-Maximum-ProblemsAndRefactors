@@ -11,7 +11,7 @@ namespace MaximiumNumbersAndRefactors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax \t 4.Generic max value \t 5.Generic class and type ");
+            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax \t 4.Generic max value \t 5.Generic class and type \t 7.Max using generic class");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -45,6 +45,12 @@ namespace MaximiumNumbersAndRefactors
                     Console.WriteLine("Maximum float value is " +maximumgenericvalue2.MaxMethod());
                     Console.WriteLine("Maximum string value is " +maximumgenericvalue3.MaxMethod());
                     break;
+                case 7:
+                    int[] arr = { 112, 34, 256, 155, 100, 175 };
+                    MaxUseGenericMethod<int> genericmethod = new MaxUseGenericMethod<int>(arr);
+                    genericmethod.PrintMaxValue();
+                    break;
+
 
 
                 default:

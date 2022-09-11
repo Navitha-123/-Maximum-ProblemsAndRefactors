@@ -46,6 +46,7 @@
     <Compile Include="FloatMaxNumber.cs" />
     <Compile Include="MaximumGenericValue.cs" />
     <Compile Include="IntegerMaximumNumber.cs" />
+    <Compile Include="MaxUseGenericMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GenericRefactor3To1Maximum.cs" />
