@@ -10,7 +10,7 @@ namespace MaximiumNumbersAndRefactors
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum");
+            Console.WriteLine("Choose option 1.IntergerMaxNumb \t 2.FloatMaxNum \t 3.Stringmax");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -23,6 +23,11 @@ namespace MaximiumNumbersAndRefactors
                     FloatMaxNumber floatMaxNumber = new FloatMaxNumber();
                     int  Floatvalue = (int)floatMaxNumber.PrintFloatMaximumNumber(6.3f,4.05f,3.4f);
                     Console.WriteLine("Maximum number of Float is " + Floatvalue);
+                    break;
+                case 3:
+                    StringsMaximum stringsMaximum = new StringsMaximum();
+                    String strvalue = stringsMaximum.PrintMaximumString("navitha", "Apple", "water");
+                    Console.WriteLine("maximum string value is " +strvalue);
                     break;
 
 
