@@ -22,12 +22,12 @@ namespace MaximiumNumbersAndRefactors
             
                     break;
                 case 2:
-                    UC2FloatMaxNumber floatMaxNumber = new UC2FloatMaxNumber();
+                    UC2_FloatMaxNumber floatMaxNumber = new UC2_FloatMaxNumber();
                     int  Floatvalue = (int)floatMaxNumber.PrintFloatMaximumNumber(6.3f,4.05f,3.4f);
                     Console.WriteLine("Maximum number of Float is " + Floatvalue);
                     break;
                 case 3:
-                    StringsMaximum stringsMaximum = new StringsMaximum();
+                    UC3_StringsMaximum stringsMaximum = new UC3_StringsMaximum();
                     String strvalue = stringsMaximum.PrintMaximumString("navitha", "Apple", "water");
                     Console.WriteLine("maximum string value is " +strvalue);
                     break;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaximiumNumbersAndRefactors
 {
-    public class StringsMaximum
+    public class UC3_StringsMaximum
     {
         public String PrintMaximumString(String str1, String str2, String str3) 
         {
