@@ -9,10 +9,10 @@ namespace MaximiumNumbersAndRefactors
 {
     
     
-        public class MaximumGenericValue<T>where T : IComparable
+        public class UC4_MaximumGenericValue<T>where T : IComparable
         {
             public T value1, value2, value3;
-            public MaximumGenericValue(T value1, T value2, T value3)
+            public UC4_MaximumGenericValue(T value1, T value2, T value3)
             {
                 this.value1 = value1;
                 this.value2 = value2;
@@ -42,7 +42,7 @@ namespace MaximiumNumbersAndRefactors
                      }
                      public T MaxMethod()
                      {
-                                T max = MaximumGenericValue<T>.MaxValue(this.value1, this.value2, this.value3);
+                                T max = UC4_MaximumGenericValue<T>.MaxValue(this.value1, this.value2, this.value3);
                                  return max;
                      }
 

@@ -39,9 +39,9 @@ namespace MaximiumNumbersAndRefactors
                     string val3 = genericRefactor3To1Maximum.PrintMaximumValue("banana", "watermellon", "papaya");
                     break;
                 case 5:
-                    MaximumGenericValue<int> maximumgenericvalue1 = new MaximumGenericValue<int>(90, 67, 65);
-                    MaximumGenericValue<float> maximumgenericvalue2 = new MaximumGenericValue<float>(5.6f, 6.7f, 89.6f);
-                    MaximumGenericValue<string> maximumgenericvalue3 = new MaximumGenericValue<string>("papaya","apple","grapes");
+                    UC4_MaximumGenericValue<int> maximumgenericvalue1 = new UC4_MaximumGenericValue<int>(90, 67, 65);
+                    UC4_MaximumGenericValue<float> maximumgenericvalue2 = new UC4_MaximumGenericValue<float>(5.6f, 6.7f, 89.6f);
+                    UC4_MaximumGenericValue<string> maximumgenericvalue3 = new UC4_MaximumGenericValue<string>("papaya","apple","grapes");
                     Console.WriteLine("Maximum integer value is " +maximumgenericvalue1.MaxMethod());
                     Console.WriteLine("Maximum float value is " +maximumgenericvalue2.MaxMethod());
                     Console.WriteLine("Maximum string value is " +maximumgenericvalue3.MaxMethod());
