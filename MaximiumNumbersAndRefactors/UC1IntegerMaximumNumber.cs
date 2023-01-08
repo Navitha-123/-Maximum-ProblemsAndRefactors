@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaximiumNumbersAndRefactors
 {
-    internal class IntegerMaximumNumber
+    internal class UC1IntegerMaximumNumber
     {
            public T PrintMaximumNumber<T>(T num1, T num2, T num3) where T : IComparable
             {

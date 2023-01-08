@@ -16,9 +16,10 @@ namespace MaximiumNumbersAndRefactors
             switch(option)
             {
                 case 1:
-                    IntegerMaximumNumber integerMaximumNumber = new IntegerMaximumNumber();
+                    UC1IntegerMaximumNumber integerMaximumNumber = new UC1IntegerMaximumNumber();
                     int value = integerMaximumNumber.PrintMaximumNumber(89, 40, 90);
                     Console.WriteLine("Maximum number of integer is " + value);
+            
                     break;
                 case 2:
                     FloatMaxNumber floatMaxNumber = new FloatMaxNumber();
