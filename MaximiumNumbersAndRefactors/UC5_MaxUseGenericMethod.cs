@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MaximiumNumbersAndRefactors
 {
-    public class MaxUseGenericMethod<T> where T : IComparable
+    public class UC5_MaxUseGenericMethod<T> where T : IComparable
     {
 
         public T[] value;
 
-        public MaxUseGenericMethod(T[] value)
+        public UC5_MaxUseGenericMethod(T[] value)
         {
             this.value = value;
         }

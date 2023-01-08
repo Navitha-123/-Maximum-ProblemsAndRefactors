@@ -48,7 +48,7 @@ namespace MaximiumNumbersAndRefactors
                     break;
                 case 7:
                     int[] arr = { 112, 34, 256, 155, 100, 175 };
-                    MaxUseGenericMethod<int> genericmethod = new MaxUseGenericMethod<int>(arr);
+                    UC5_MaxUseGenericMethod<int> genericmethod = new UC5_MaxUseGenericMethod<int>(arr);
                     genericmethod.PrintMaxValue();
                     break;
 
