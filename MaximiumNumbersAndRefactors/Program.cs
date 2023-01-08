@@ -22,7 +22,7 @@ namespace MaximiumNumbersAndRefactors
             
                     break;
                 case 2:
-                    FloatMaxNumber floatMaxNumber = new FloatMaxNumber();
+                    UC2FloatMaxNumber floatMaxNumber = new UC2FloatMaxNumber();
                     int  Floatvalue = (int)floatMaxNumber.PrintFloatMaximumNumber(6.3f,4.05f,3.4f);
                     Console.WriteLine("Maximum number of Float is " + Floatvalue);
                     break;
