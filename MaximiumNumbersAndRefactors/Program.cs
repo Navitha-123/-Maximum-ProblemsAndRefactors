@@ -33,7 +33,7 @@ namespace MaximiumNumbersAndRefactors
                     break;
 
                 case 4:
-                    GenericRefactor3To1Maximum genericRefactor3To1Maximum = new GenericRefactor3To1Maximum();
+                    UC3_1GenericRefactor3To1Maximum genericRefactor3To1Maximum = new UC3_1GenericRefactor3To1Maximum();
                     int val1 = genericRefactor3To1Maximum.PrintMaximumValue(908, 564, 7000);
                     float val2 = genericRefactor3To1Maximum.PrintMaximumValue(56.4f, 8.23f, 67.4f);
                     string val3 = genericRefactor3To1Maximum.PrintMaximumValue("banana", "watermellon", "papaya");

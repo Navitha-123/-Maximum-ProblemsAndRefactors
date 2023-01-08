@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaximiumNumbersAndRefactors
 {
-    public class GenericRefactor3To1Maximum
+    public class UC3_1GenericRefactor3To1Maximum
     {
         public T PrintMaximumValue<T>(T val1, T val2, T val3) where T : IComparable
         {
